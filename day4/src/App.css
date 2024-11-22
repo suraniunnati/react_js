@@ -1,0 +1,50 @@
+body{
+  background-color: black;
+  color: white;
+}
+.App{
+  /* border: 1px solid white; */
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  height: 400px;
+  margin-top: 10%;
+  padding-top: 30px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 100px 0 rgb(63, 63, 63);
+}
+button{
+  margin: 10px;
+  width: 50px;
+  height: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 0 10px 0 gray;
+  border-radius: 10px;
+}
+button:hover{
+  background-color: green;
+}
+.count{
+  border: 1px solid white;
+  height: 250px;
+  width: 50%;
+  margin: auto;
+  background-image: url("https://images.unsplash.com/photo-1707336862166-1e483cfa5c92?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2hpdGUlMjBhYnN0cmFjdHxlbnwwfHwwfHx8MA%3D%3D");
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 100px 0 rgb(103, 103, 103);
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.restart{
+  width: 100px;
+  height: 30px;
+  margin-top: 20px;
+  background-color:rgb(3, 3, 220);
+  color: white;
+}
