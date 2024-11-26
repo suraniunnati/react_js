@@ -1,0 +1,65 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200801/pngtree-purple-abstract-background-fluid-gradient-with-wave-forms-image_375467.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 635px;
+}
+
+.main{
+  /* border: 1px solid black; */
+  height: 500px;
+  width: 370px;
+  margin: auto;
+  margin-top: 6%;
+  background: linear-gradient(#E62AC0,#A11CA1,#531081);
+  /* background-color: rgba(255, 255, 255, 0.186); */
+  box-shadow: 0 0 20px 0 white;
+  border-radius: 20px;
+  text-align: center;
+ position: relative;
+}
+h1{
+  color: white;
+  padding-top: 30px;
+}
+input{
+  border: none;
+  height: 40px;
+  width: 90%;
+  background-color: transparent;
+  border-bottom: 4px solid rgba(119, 1, 119, 0.629);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+input::placeholder{
+  color: white;
+  font-size: 15px;
+}
+button{
+  height: 50px;
+  width: 250px;
+  border-radius: 10px;
+  background-color: #420D79;
+  color: white;
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.56);
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+#add{
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  left: 25%;
+}
+input:focus, select:focus {
+  outline: none;       
+  border-top: none;         
+  border-left: none;
+  border-right: none;
+}
