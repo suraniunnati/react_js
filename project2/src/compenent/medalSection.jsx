@@ -1,14 +1,14 @@
 import { useState } from "react"
 function Medalsection(){
     let [arr, setarr] = useState([
-        { name1: "Prateek Shukla", post: "Founder & CEO",url:"https://masai-website-images.s3.ap-south-1.amazonaws.com/prateek_6232b84d8b.jpeg" },
-        { name1: "Nrupul Dev", post: "Co-Founder & CTO",url:"https://masai-website-images.s3.ap-south-1.amazonaws.com/Nrupul_d3fe3b289a.jpg" },
-        { name1: "Yogesh Bhat", post: "Co Founder and SVP" ,url:"https://masai-website-images.s3.ap-south-1.amazonaws.com/Yogesh_52e31f5560.jpg"},
-        { name1: "Keshav Misra", post: "Senior Vice President",url:"https://masai-website-images.s3.ap-south-1.amazonaws.com/keshav_misra_203a893693.jpeg" },
-        { name1: "Ishita Chanana", post: "Senior Vice President - HR",url:"https://masai-website-images.s3.ap-south-1.amazonaws.com/1614198786109_Ishita_Chanana_d3d8c56ab0.jpg" },
-        { name1: "Nrupul Dev", post: "Co-Founder & CTO" ,url:"https://masai-website-images.s3.ap-south-1.amazonaws.com/aman_fbbc8625a4.jpg"},
-        { name1: "Nrupul Dev", post: "Co-Founder & CTO" ,url:"https://masai-website-images.s3.ap-south-1.amazonaws.com/aman_singhal_500_beb3801ed9.webp"},
-        { name1: "Nrupul Dev", post: "Co-Founder & CTO",url:"https://masai-website-images.s3.ap-south-1.amazonaws.com/IMG_2262_Kishore_Acharya_098d2f5a9c.jpg" }
+        { name: "Prateek Shukla", post: "Founder & CEO",url:"https://masai-website-images.s3.ap-south-1.amazonaws.com/prateek_6232b84d8b.jpeg" },
+        { name: "Nrupul Dev", post: "Co-Founder & CTO",url:"https://masai-website-images.s3.ap-south-1.amazonaws.com/Nrupul_d3fe3b289a.jpg" },
+        { name: "Yogesh Bhat", post: "Co Founder and SVP" ,url:"https://masai-website-images.s3.ap-south-1.amazonaws.com/Yogesh_52e31f5560.jpg"},
+        { name: "Keshav Misra", post: "Senior Vice President",url:"https://masai-website-images.s3.ap-south-1.amazonaws.com/keshav_misra_203a893693.jpeg" },
+        { name: "Ishita Chanana", post: "Senior Vice President - HR",url:"https://masai-website-images.s3.ap-south-1.amazonaws.com/1614198786109_Ishita_Chanana_d3d8c56ab0.jpg" },
+        { name: "Nrupul Dev", post: "Co-Founder & CTO" ,url:"https://masai-website-images.s3.ap-south-1.amazonaws.com/aman_fbbc8625a4.jpg"},
+        { name: "Nrupul Dev", post: "Co-Founder & CTO" ,url:"https://masai-website-images.s3.ap-south-1.amazonaws.com/aman_singhal_500_beb3801ed9.webp"},
+        { name: "Nrupul Dev", post: "Co-Founder & CTO",url:"https://masai-website-images.s3.ap-south-1.amazonaws.com/IMG_2262_Kishore_Acharya_098d2f5a9c.jpg" }
 ])
     return(
         <div>
@@ -26,7 +26,7 @@ function Medalsection(){
                     <img src={el.url} alt=""  class="h-full rounded-3xl w-full" />
 
                     <div className="a absolute bottom-1 text-center w-full">
-                    <h6 class="font-bold text-[1.3vw]">{el.name1}</h6>
+                    <h6 class="font-bold text-[1.3vw]">{el.name}</h6>
                     <p>{el.post}</p>
                     <i class="fa-brands fa-linkedin-in  text-[#1265BF]   text-[19px] "></i>
                     <i class="fa-brands fa-twitter   text-[#1265BF]      text-[19px] ms-[10px] "></i>
