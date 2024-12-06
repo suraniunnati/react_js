@@ -1,0 +1,44 @@
+body{
+  background-image: url(https://png.pngtree.com/background/20230416/original/pngtree-hd-pastel-pink-gold-marble-background-picture-image_2443668.jpg);
+  background-size: cover;
+}
+form{
+  border: 1px solid transparent;
+  text-align: center;
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 0 rgb(155, 155, 155);
+}
+input{
+  width: 80%;
+  margin-top: 10px;
+  height: 30px;
+  padding-left: 10px;
+}
+
+#submit{
+  background-color: rgb(1, 1, 83);
+  color: white;
+  height: 35px;
+  padding: 10px;
+}
+#showpage{
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 30px;
+}
+img{
+  width: 200px;
+  height: 250px;
+ border-radius: 20px;
+ padding: 5px;
+}
+#product{
+ box-shadow: 0 0 10px 0 rgb(198, 196, 196);
+  border-radius: 20px;
+  text-align: center;
+  background-color: rgba(247, 233, 235, 0.927);
+}
