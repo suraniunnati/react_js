@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main{
+    border: 1px solid black;
+    width: 100%;
+    height: 720px;
+    display: flex;
+}
+#main1{
+    border: 1px solid black;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://img.freepik.com/free-photo/abstract-gradient-neon-lights_23-2149279180.jpg?semt=ais_hybrid");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form{
+    width: 350px;
+   box-shadow: 0 0 20px 0 rgba(0, 128, 0, 0.51);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.812);
+}
+input{
+   width: 95%;
+    border-radius: 5px;
+    height: 35px;
+    margin-top: 30px;
+    background: transparent;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 1px solid green;
+}
+#submit{
+    width: 90%;
+    height: 40px;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right,green,rgb(0, 85, 0));
+}
+h2{
+    /* line-height: 10px; */
+    text-align: center;
+}
+p{
+    line-height: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: red;
+    font-size: 12px;
+}
+span{
+    margin-left: 20%;
+}
+img{
+    width: 12px;
+    margin-right: 7px;
+}
+#main2{
+    padding: 30px;
+}
+#show{
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: rgba(0, 128, 0, 0.445);
+    color: white;
+}
