@@ -1,0 +1,40 @@
+form{
+   box-shadow: 0 0 10px 0 gray;
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+   background-image: url("https://t4.ftcdn.net/jpg/00/81/32/45/360_F_81324535_JCfbuvzOsk90FIiBmEZfp64ovkII4nxE.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   margin-top: 5%;
+}
+h2{
+    text-align: center;
+    text-shadow: 2px 1px rgb(197, 197, 197);
+}
+input{
+    width: 100%;
+    margin-top: 15px;
+    height: 35px;
+    border: none;
+    box-shadow: 0 0 10px 0 rgb(176, 176, 176);
+    border-radius: 5px;
+    padding-left: 10px;
+}
+label{
+    font-weight: bold;
+}
+#add{
+    width: 80px;
+    height: 25px;
+    background-color: rgb(2, 2, 92);
+    border-radius: 5px;
+    color: white;
+}
+#submit{
+    background-color: rgb(2, 2, 92);
+    color: white;
+    height: 40px;
+    border-radius: 10px;
+}
