@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState} from "react"
 
 function ProductForm(){
     let[state,setState]=useState({
@@ -20,6 +20,10 @@ function ProductForm(){
         const{name,value}=e.target 
         setState({...state,[name]:value})
 
+        if(e.target.value>0){
+            seton(false)
+        }
+
     }
     const SubmitClick=(e)=>{
         e.preventDefault()
@@ -27,13 +31,11 @@ function ProductForm(){
         console.log(state)
 
         if(nameErr==false && priceErr==false && desErr==false ){
-            seton(false)
+
             alert("form submit successfuly")
         }
         else{
-           
-            alert("place enter valide data")
-           
+            alert("place enter valide data") 
         }
 
         setState({
@@ -77,13 +79,14 @@ function ProductForm(){
         }
 
     }
+
     return<>
 
     <form action="" onSubmit={SubmitClick}>
         <h3>PRODUCT FORM</h3>
-        <input type="text" name="name" value={state.name} placeholder="Product Name" onChange={handle} onBlur={blurClick} onFocus={focusClick}/><br/>
+        <input type="text" name="name" value={state.name} autoFocus placeholder="Product Name" onChange={handle} onBlur={blurClick} onFocus={focusClick}/><br/>
         {nameErr==true ? <p>Must be at least 3 characters long.</p>:""}
-        <input type="text" name="price" value={state.price}  placeholder="price" onChange={handle} onBlur={blurClick} onFocus={focusClick}/><br/>
+        <input type="number" name="price" value={state.price}  placeholder="price" onChange={handle} onBlur={blurClick} onFocus={focusClick}/><br/>
         {priceErr==true ? <p>Must be a positive number.</p>:""}
         <select name="category" value={state.category} onChange={handle}>
             <option value="">Category</option>
@@ -96,7 +99,7 @@ function ProductForm(){
         {desErr==true ? <p>Maximum of 200 characters.</p>:""}
         <input type="file" name="img" value={state.img} placeholder="Image" onChange={handle} onBlur={blurClick} onFocus={focusClick}/><br/>
         {imgErr==true ? <p>Must only accept image files (JPEG, PNG).</p>:""}
-        <input type="submit"/>
+        <input type="submit" id="submit" disabled={on} />
     </form>
     </>
 }
