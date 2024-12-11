@@ -51,7 +51,7 @@ function ProductForm(){
 
     }
 
-    const handleflie=(e)=>{
+    const handlefile=(e)=>{
         const file = e.target.files[0];
     if (file && ["image/jpeg", "image/png"].includes(file.type)) {
         setState({ ...state, img: file });
@@ -113,7 +113,7 @@ function ProductForm(){
         <input type="text" name="des" value={state.des} placeholder="Description"  onChange={handle} onBlur={blurClick} onFocus={focusClick}/><br/>
         {desErr==true ? <p>Maximum of 200 characters.</p>:""}
       
-        <input type="file" name="img"  placeholder="Image" onChange={handleflie}/><br/>
+        <input type="file" name="img"  placeholder="Image" onChange={handlefile}/><br/>
         {imgErr==true ? <p>Must only accept image files (JPEG, PNG).</p>:""}
         <input type="submit" id="submit" disabled={on} />
     </form>
