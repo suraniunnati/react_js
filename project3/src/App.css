@@ -1,10 +1,10 @@
 form{
   width: 500px;
-  border: 1px solid black;
   padding: 20px;
   border-radius: 10px;
   margin: auto;
   margin-top: 5%;
+  box-shadow: 0 0 10px 0 rgb(199, 199, 199);
 }
 input{
   width: 98%;

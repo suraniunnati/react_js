@@ -20,7 +20,10 @@ function ProductForm(){
         const{name,value}=e.target 
         setState({...state,[name]:value})
 
-        if(e.target.value>0){
+    // if(e.target.value>0){
+    //         seton(false)
+    //     }
+        if(nameErr==false && priceErr==false && desErr==false && imgErr==false){
             seton(false)
         }
 
@@ -30,7 +33,7 @@ function ProductForm(){
         setarr([...arr,state])
         console.log(state)
 
-        if(nameErr==false && priceErr==false && desErr==false ){
+        if(nameErr==false && priceErr==false && desErr==false && imgErr==false ){
 
             alert("form submit successfuly")
         }
@@ -47,6 +50,18 @@ function ProductForm(){
         })
 
     }
+
+    const handleflie=(e)=>{
+        const file = e.target.files[0];
+    if (file && ["image/jpeg", "image/png"].includes(file.type)) {
+        setState({ ...state, img: file });
+        setimgErr(false);
+    }
+    else {
+        setimgErr(true);
+    }
+}
+
     const blurClick=(e)=>{
         let{name,value}=e.target 
         if(name=="name" && value.length < 3 ){
@@ -97,10 +112,12 @@ function ProductForm(){
         </select><br/>
         <input type="text" name="des" value={state.des} placeholder="Description"  onChange={handle} onBlur={blurClick} onFocus={focusClick}/><br/>
         {desErr==true ? <p>Maximum of 200 characters.</p>:""}
-        <input type="file" name="img" value={state.img} placeholder="Image" onChange={handle} onBlur={blurClick} onFocus={focusClick}/><br/>
+      
+        <input type="file" name="img"  placeholder="Image" onChange={handleflie}/><br/>
         {imgErr==true ? <p>Must only accept image files (JPEG, PNG).</p>:""}
         <input type="submit" id="submit" disabled={on} />
     </form>
     </>
 }
+
 export default ProductForm
