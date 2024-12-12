@@ -172,13 +172,8 @@ function ProductForm() {
           <input type="submit" id="submit" disabled={on} />
         </form>)}
 
-        {toggle == true ? (
-        <div>
-          <ShowProduct data={arr} />
-        </div>
-      ) : (
-        ""
-      )}
+        {toggle && (
+        <div><ShowProduct data={arr} /></div>)}
       
     </>
   );
