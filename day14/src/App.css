@@ -1,0 +1,32 @@
+form{
+  width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 5%;
+  box-shadow: 0 0 10px 0 rgb(199, 199, 199);
+}
+input{
+  width: 98%;
+  margin-top: 10px;
+  height: 35px;
+  padding-left: 10px;
+}
+select{
+  width: 101%;
+  margin-top: 10px;
+  height: 40px;
+}
+p{
+  color: rgb(218, 0, 0);
+  font-size: 12px;
+}
+#title{
+  text-align: center;
+}
+#submit{
+  /* background-color: rgb(0, 0, 74); */
+  /* color: white; */
+  width: 100%;
+  height: 40px;
+}
