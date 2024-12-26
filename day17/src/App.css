@@ -1,0 +1,24 @@
+
+form{
+  width: 500px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 ;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+}
+
+input{
+  width: 90%;
+  height: 35px;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+#show{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+  padding: 20px;
+}
