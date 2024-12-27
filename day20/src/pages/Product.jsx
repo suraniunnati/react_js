@@ -18,7 +18,6 @@ function Product() {
         e.preventDefault()
         fetch(`http://localhost:3000/product`,{
             method:'POST',
-            method:'POST',
             headers:{
                 'content-type':'appliction/json'
             },
@@ -27,7 +26,7 @@ function Product() {
         .then((r)=>r.json())
         .then((res)=>{
             setArr([...arr,res])
-            
+            console.log(res)
        
            
         })
@@ -41,12 +40,14 @@ function Product() {
         })
     }
 
-    useEffect(() => {
-        fetch(`http://localhost:3000/product`)
-            .then((r) => r.json())
-            .then((res) => setArr(res))
-            .catch((err) => console.log(err));
-    }, []);
+    // useEffect(() => {
+    //     fetch(`http://localhost:3000/product`)
+    //         .then((r) => r.json())
+    //         .then((res) => 
+    //             {setArr(res)
+    //             })
+    //         .catch((err) => console.log(err));
+    // }, []);
 
   
   return (
@@ -60,6 +61,7 @@ function Product() {
     </form>
 
     <div id="show">
+    
     <ShowData data={arr}></ShowData>
     </div>
   

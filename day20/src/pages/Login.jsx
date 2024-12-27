@@ -20,6 +20,7 @@ function Login() {
 
                     if(res[0].password==state.password){
                         alert("login success")
+                        localStorage.setItem("login",true) 
                     }
                     else{
                         alert("password is not....")
