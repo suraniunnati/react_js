@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import "../App.css";
 
 function Login() {
@@ -8,8 +7,6 @@ function Login() {
         email:"",
         password:""
     })
-
-    const naviget=useNavigate()
 
     const handle=(e)=>{
         const{name,value}=e.target 
@@ -28,19 +25,26 @@ function Login() {
         .then((r)=>r.json())
         .then((res)=>{
             console.log(res)
-            naviget("/login")
+            localStorage.setItem("login",true)    
+            alert("login successfuly......")  
+            setState({
+                username:"",
+                email:"",
+                password:""
+            })
         })
         .catch((err)=>{
             console.log(err)
         })
+      
     }
 
   return (
     <form action="" onSubmit={handleSubmit}>
          <h3>Login Form </h3>
-        <input type="text" name='username' placeholder='username' onChange={handle}/>
-        <input type="text" name='email' placeholder='Email' onChange={handle}/>
-        <input type="text" name='password' placeholder='Password' onChange={handle}/>
+        <input type="text" name='username' value={state.username} placeholder='username' onChange={handle}/>
+        <input type="text" name='email' value={state.email} placeholder='Email' onChange={handle}/>
+        <input type="text" name='password' value={state.password} placeholder='Password' onChange={handle}/>
         <input type="submit" />
     </form>
   )

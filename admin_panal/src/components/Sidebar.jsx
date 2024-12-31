@@ -1,19 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../App.css";
 
 const Sidebar = () => {
   return (
-    <div style={{ width: "200px", background: "#ddd", padding: "10px" }}>
-      <h4>Menu</h4>
-      <ul style={{ listStyle: "none", padding: 0 }}>
-        <li>
-          <Link to="/">Login</Link>
+    <div className="sidebar">
+      <h2 className="sidebar-title">Admin Panel</h2>
+      <ul className="sidebar-nav">
+        <li className="sidebar-item">
+          <Link to="/login" className="sidebar-link">
+          <i class="fa-solid fa-user-plus"></i> Login
+          </Link>
         </li>
-        <li>
-          <Link to="/user">User</Link>
+        <li className="sidebar-item">
+          <Link to="/user" className="sidebar-link">
+          <i class="fa-solid fa-user"></i> Users
+          </Link>
         </li>
-        <li>
-          <Link to="/product">Product</Link>
+        <li className="sidebar-item">
+          <Link to="/product" className="sidebar-link">
+          <i class="fa-solid fa-book"></i> Products
+          </Link>
         </li>
       </ul>
     </div>

@@ -12,7 +12,9 @@ const App = () => {
         <Sidebar />
         <div style={{ flex: 1 }}>
           <Navbar />
+          <dir style={{marginleft: "30px"}}>
           <MainRoutes />
+          </dir>
         </div>
       </div>
     </Router>

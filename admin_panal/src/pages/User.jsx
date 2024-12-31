@@ -1,33 +1,24 @@
-import "../App.css";
 import React, { useEffect, useState } from "react";
-
+import "../App.css";
 
 function User() {
   const [users, setUsers] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
+  // Fetch users
   useEffect(() => {
-    // Fetch user data from the API
     fetch("http://localhost:3000/user")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Failed to fetch user data");
-        }
-        return response.json();
-      })
-      .then((data) => {
-        setUsers(data);
-        setLoading(false);
-      })
-      .catch((err) => {
-        setError(err.message);
-        setLoading(false);
-      });
+      .then((res) => res.json())
+      .then(setUsers)
+      .catch(console.error);
   }, []);
 
-  if (loading) return <p>Loading users...</p>;
-  if (error) return <p>Error: {error}</p>;
+  // Delete user
+  const del = (id) => {
+    fetch(`http://localhost:3000/user/${id}`,{
+    method: "DELETE" })
+      .then(() => setUsers(users.filter((user) => user.id !== id)))
+      .catch(console.error);
+  };
 
   return (
     <div>
@@ -35,22 +26,22 @@ function User() {
       {users.length === 0 ? (
         <p>No users found</p>
       ) : (
-        <table >
+        <table>
           <thead>
             <tr>
               <th>Username</th>
               <th>Email</th>
-              <th>Password</th>
               <th>Remove</th>
             </tr>
           </thead>
           <tbody>
-            {users.map((user, index) => (
-              <tr key={index}>
+            {users.map((user) => (
+              <tr key={user.id}>
                 <td>{user.username}</td>
                 <td>{user.email}</td>
-                <td>{user.password}</td>
-                <td><button>Delete</button></td>
+                <td>
+                  <button onClick={() => del(user.id)} id="delete">Delete</button>
+                </td>
               </tr>
             ))}
           </tbody>
@@ -59,7 +50,5 @@ function User() {
     </div>
   );
 }
-
-
 
 export default User;
