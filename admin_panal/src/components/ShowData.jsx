@@ -1,10 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Product from '../pages/Product'
 import { useState,useEffect } from 'react';
 
 function ShowData() {
    const [state, setState] = useState("");
+   let neviget=useNavigate()
  
    // Fetch users
    useEffect(() => {
@@ -24,6 +25,18 @@ function ShowData() {
       .catch((err) => console.log(err));
   };
 
+  const edit=(id)=>{
+    console.log(id)
+    fetch(`http://localhost:3000/product/${id}`)
+    .then((r)=>r.json())
+    .then((res)=>{
+        console.log(res)
+        localStorage.setItem("editid",id)
+    })
+    .catch((err)=>{console.log(err)})
+    neviget("/editProduct")
+
+  }
     
   return <>
     <h3>Product List</h3>
@@ -49,7 +62,7 @@ function ShowData() {
           <td>₹{el.price}</td>
           <td style={{width:"350px"}}>{el.del}</td>
           <td style={{width:"100px"}}><button  onClick={() => del(el.id)}  id='delete'><i class="fa-solid fa-trash"></i> Delete</button></td>
-          <td style={{width:"100px"}}><button id='edit'><i class="fa-solid fa-pen-to-square"></i> Edit</button></td>
+          <td style={{width:"100px"}}><button onClick={()=>edit(el.id)} id='edit'><i class="fa-solid fa-pen-to-square"></i> Edit</button></td>
         </tr>
       ))}
     </tbody>
