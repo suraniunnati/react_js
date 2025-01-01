@@ -1,5 +1,4 @@
-import React, { useState,useEffect } from 'react'
-import ShowData from '../components/ShowData'
+import React, { useState } from 'react'
 
 function Product() {
     let[state,setState]=useState({
@@ -40,25 +39,6 @@ function Product() {
         })
     }
 
-    useEffect(() => {
-        fetch(`http://localhost:3000/product`)
-            .then((r) => r.json())
-            .then((res) => 
-                {setArr(res)
-                })
-            .catch((err) => console.log(err));
-    }, []);
-
-    const del = (id) => {
-        fetch(`http://localhost:3000/product/${id}`, {
-          method: "DELETE",
-        })
-          .then(() => {
-            setArr(arr.filter((product) => product.id !== id));
-          })
-          .catch((err) => console.log(err));
-      };
-
 
   return (
     <>
@@ -71,10 +51,6 @@ function Product() {
         <input type="submit" />
     </form>
 
-    <div id="show">
-    
-    <ShowData data={arr} Delete={del}></ShowData>
-    </div>
   
     </>
   )

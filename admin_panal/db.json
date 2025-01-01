@@ -7,5 +7,13 @@
       "password": "12345"
     }
   ],
-  "product": []
+  "product": [
+    {
+      "id": "9e32",
+      "title": "bag",
+      "price": "1500",
+      "img": "https://hips.hearstapps.com/hmg-prod/images/nature-quotes-landscape-1648265648.jpg?crop=0.8888888888888888xw:1xh;center,top&resize=1200:*",
+      "del": "kujytrewsdfghn"
+    }
+  ]
 }

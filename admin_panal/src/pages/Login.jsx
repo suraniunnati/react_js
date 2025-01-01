@@ -25,8 +25,8 @@ function Login() {
         .then((r)=>r.json())
         .then((res)=>{
             console.log(res)
-            localStorage.setItem("login",true)    
-            alert("login successfuly......")  
+            localStorage.setItem("login","true")    
+            alert("login successfully......")  
             setState({
                 username:"",
                 email:"",

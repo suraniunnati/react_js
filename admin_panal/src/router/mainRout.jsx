@@ -4,6 +4,7 @@ import Login from "../pages/Login";
 import User from "../pages/User";
 import Product from "../pages/Product";
 import PrivateRoute from "../components/PrivateRoute";
+import ShowData from "../components/ShowData";
 
 const MainRoutes = () => {
   return (
@@ -15,6 +16,8 @@ const MainRoutes = () => {
         <Product />
         </PrivateRoute>
       } />
+      <Route path="/product/form" element={<Product />} />
+      <Route path="/product/list" element={<ShowData />} />
     </Routes>
   );
 };

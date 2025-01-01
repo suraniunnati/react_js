@@ -29,6 +29,7 @@ function User() {
         <table>
           <thead>
             <tr>
+              <th>Id</th>
               <th>Username</th>
               <th>Email</th>
               <th>Remove</th>
@@ -37,6 +38,7 @@ function User() {
           <tbody>
             {users.map((user) => (
               <tr key={user.id}>
+                <td>{user.id}</td>
                 <td>{user.username}</td>
                 <td>{user.email}</td>
                 <td>
