@@ -31,7 +31,7 @@ function ShowData() {
     .then((r)=>r.json())
     .then((res)=>{
         console.log(res)
-        localStorage.setItem("editid",id)
+        localStorage.setItem("editid",JSON.stringify(res))
     })
     .catch((err)=>{console.log(err)})
     neviget("/editProduct")
