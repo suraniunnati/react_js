@@ -19,7 +19,7 @@ const MainRoutes = () => {
       } />
       <Route path="/product/form" element={<Product />} />
       <Route path="/product/list" element={<ShowData />} />
-      <Route path="/editProduct" element={<EditProduct/>}/>
+      <Route path="/editProduct/:id" element={<EditProduct/>}/>
     </Routes>
   );
 };

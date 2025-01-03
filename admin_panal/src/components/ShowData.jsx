@@ -62,7 +62,7 @@ function ShowData() {
           <td>₹{el.price}</td>
           <td style={{width:"350px"}}>{el.del}</td>
           <td style={{width:"100px"}}><button  onClick={() => del(el.id)}  id='delete'><i class="fa-solid fa-trash"></i> Delete</button></td>
-          <td style={{width:"100px"}}><button onClick={()=>edit(el.id)} id='edit'><i class="fa-solid fa-pen-to-square"></i> Edit</button></td>
+          <td style={{width:"100px"}}><Link  to={`/editProduct/${el.id}`}><button id='edit'><i class="fa-solid fa-pen-to-square"></i> Edit</button></Link></td>
         </tr>
       ))}
     </tbody>
