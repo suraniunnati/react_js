@@ -1,0 +1,35 @@
+#main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 20px;
+    gap: 30px;
+}
+#item{
+    box-shadow: 0 0 10px 0 rgb(226, 226, 226);
+    border-radius: 20px;
+    padding: 10px;
+    height: 400px;
+}
+#img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+#manu{
+    display: flex;
+    padding: 20px;
+}
+#search{
+    width: 450px;
+    padding-left: 10px;
+    height: 30px;
+    border-radius: 30px;
+    border: 1px solid black;
+    
+}
+select{
+    border-radius: 10px;
+    margin-left: 20px;
+    width: 200px;
+}

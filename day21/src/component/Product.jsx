@@ -52,8 +52,9 @@ function Product() {
 
     return (
         <div>
+            <div id="manu">
             <div>
-            <input type="text" onChange={(e)=>setSearch(e.target.value)} />
+            <input type="text" onChange={(e)=>setSearch(e.target.value)} placeholder='Search....' id='search'/>
             </div>
             <select name="" id="" onChange={(e) => setsort(e.target.value)}>
                 <option value="">select for sort</option>
@@ -68,13 +69,19 @@ function Product() {
                 <option value="electronics">electronics</option>
                 <option value="women's clothing">women's clothing</option>
             </select>
+            </div>
+            <div id='main'>
             {newproduct.map((el) => {
-                return <div>
+                return <div id='item'>
+                    <div id='img'>
                     <img src={el.image} alt="" width={"150px"} />
+                    </div>
+                    
                     <h3>{el.title}</h3>
-                    <p>{el.price}</p>
+                    <p>₹ {el.price}</p>
                 </div>
             })}
+            </div>
         </div>
     )
 }
