@@ -10,7 +10,6 @@ export const reducer1 = (state = count,action) => {
     }
   };
   
-  // counter2Reducer.js
   export const reducer2 = (state =count,action) => {
     switch (action.type) {
       case 'INC1':
