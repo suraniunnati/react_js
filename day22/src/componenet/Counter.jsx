@@ -9,7 +9,7 @@ function Counter() {
   return (
     <div>
          <h3>Counter : {select}</h3>
-         <button onClick={()=>{dispatch({type:"DEC"})}}>-</button>
+         <button onClick={()=>{dispatch({type:"DEC"})}}  disabled={select <= 0}>-</button>
          <button onClick={()=>{dispatch({type:"INC"})}}>+</button>
     </div>
   )

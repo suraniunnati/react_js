@@ -6,7 +6,7 @@ function Counters() {
     const dispatch=useDispatch()
   return (
     <div><h2>Counter1 : {select}</h2>
-    <button onClick={()=>{dispatch({type:"DEC1"})}}>-</button>
+    <button onClick={()=>{dispatch({type:"DEC1"})}} disabled={select <= 0}>-</button>
     <button onClick={()=>{dispatch({type:"INC1"})}}>+</button>
     </div>
   )
