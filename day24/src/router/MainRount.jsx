@@ -6,21 +6,21 @@ import Product from '../component/Product'
 import PrivateRoute from '../component/PrivateRoute'
 
 function MainRount() {
-  return (<>
-  
-    <Routes>
-        <Route path='/signup' element={<Signup/>}>signup</Route>
-        <Route path='/login' element={<Login/>}>signup</Route>
-        <Route path='/product' element={
-            // <PrivateRoute>
-            <Product/>
-            // </PrivateRoute>
-        }>product</Route>
-    </Routes>
+    return (<>
+
+        <Routes>
+            <Route path='/signup' element={<Signup />}>signup</Route>
+            <Route path='/login' element={<Login />}>signup</Route>
+            <Route path='/product' element={
+                <PrivateRoute>
+                    <Product />
+                </PrivateRoute>
+            }>product</Route>
+        </Routes>
 
     </>
 
-  )
+    )
 }
 
 export default MainRount

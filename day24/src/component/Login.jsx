@@ -16,6 +16,7 @@ function Login() {
         const data = useSelector((store)=>store)
         console.log(data)
         const dispatch = useDispatch()
+       
 
         const handleSubmit=(e)=>{
             e.preventDefault()
@@ -25,6 +26,7 @@ function Login() {
                 console.log(res.data)
                 
                 dispatch({type:success,payload:res.data[0].username})
+               
             })
             .catch((err)=>{
                 console.log(err)
