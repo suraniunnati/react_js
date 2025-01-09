@@ -1,0 +1,15 @@
+body{
+    background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjU0NmJhdGNoMy1teW50LTM0LWJhZGdld2F0ZXJjb2xvcl8xLmpwZw.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 10%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgb(213, 212, 212);
+    background-color: rgba(255, 255, 255, 0.408);
+}

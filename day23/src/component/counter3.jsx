@@ -34,7 +34,7 @@ export const Counter3 = () => {
     }
     return (
         <>
-              <h4>---- user like *value counter ----</h4>
+              <h4>---- user like multiply value counter ----</h4>
             <h3>counnter3 : {data}</h3>
             <form action="" onSubmit={handleSubmit}>
                 <input type="number" onChange={handle} />

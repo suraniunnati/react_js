@@ -11,8 +11,8 @@ export const Counter2=()=>{
         <>
           <h4>---- squar counter ----</h4>
         <h3>counnter2 : {data}</h3>
-        <button onClick={()=>dispatch({type:DEC1})} disabled={data <= 1 }>-/2</button>
-        <button onClick={()=>dispatch({type:INC1})}>+*2</button>
+        <button onClick={()=>dispatch({type:DEC1})} disabled={data <= 1 }>reverse</button>
+        <button onClick={()=>dispatch({type:INC1})}>square</button>
         </>
     )
 }

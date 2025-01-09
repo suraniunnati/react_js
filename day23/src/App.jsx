@@ -9,11 +9,11 @@ function App() {
  
 
   return (
-    <>
+    <div className='main'>
    <Counter/>
    <Counter2/>
    <Counter3/>
-    </>
+    </div>
   )
 }
 
