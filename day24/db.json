@@ -1,0 +1,25 @@
+{
+  "user": [
+    {
+      "id": "c097",
+      "username": "ww",
+      "email": "ww",
+      "password": "ww"
+    },
+    {
+      "id": "5d81",
+      "username": "unnati",
+      "email": "suraniunnati5@gmail.com",
+      "password": "Sur@ni14"
+    }
+  ],
+  "product": [
+    {
+      "id": "0cac",
+      "totle": "",
+      "img": "c v",
+      "price": "ngvn",
+      "title": "cbv"
+    }
+  ]
+}
