@@ -1,31 +1,36 @@
 {
   "user": [
     {
-      "id": "c097",
-      "username": "ww",
-      "email": "ww",
-      "password": "ww"
-    },
-    {
-      "id": "5d81",
-      "username": "unnati",
-      "email": "suraniunnati5@gmail.com",
-      "password": "Sur@ni14"
-    },
-    {
       "id": "1aaa",
       "username": "unnati",
       "email": "suraniunnati5@gmail.com",
       "password": "12345"
+    },
+    {
+      "id": "7d61",
+      "username": "unnati",
+      "email": "unnati12@gmail.com",
+      "password": "Unn@ti14"
     }
   ],
   "product": [
     {
-      "id": "0cac",
-      "totle": "",
+      "id": "5bfa",
+      "title": "",
+      "img": "",
+      "price": ""
+    },
+    {
+      "id": "5e3e",
+      "title": "cbv",
       "img": "c v",
-      "price": "ngvn",
-      "title": "cbv"
+      "price": "ngvn"
+    },
+    {
+      "id": "f4ae",
+      "title": "bvc",
+      "img": "vcv",
+      "price": "cbc"
     }
   ]
 }

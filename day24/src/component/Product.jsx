@@ -31,9 +31,9 @@ function Product() {
 
             <form action="" onSubmit={handleSubmit}>
                 <h3>product form</h3>
-                <input type="text" placeholder='product name' name='title' value={state.username} onChange={handle} />
-                <input type="text" placeholder='image URL' name='img' value={state.email} onChange={handle} />
-                <input type="text" placeholder='product price' name='price' value={state.password} onChange={handle} />
+                <input type="text" placeholder='product name' name='title' value={state.title} onChange={handle} />
+                <input type="text" placeholder='image URL' name='img' value={state.img} onChange={handle} />
+                <input type="text" placeholder='product price' name='price' value={state.price} onChange={handle} />
                 <input type="submit" />
             </form>
         </div>
