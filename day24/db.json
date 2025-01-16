@@ -15,12 +15,6 @@
   ],
   "product": [
     {
-      "id": "5bfa",
-      "title": "",
-      "img": "",
-      "price": ""
-    },
-    {
       "id": "5e3e",
       "title": "cbv",
       "img": "c v",
@@ -31,6 +25,12 @@
       "title": "bvc",
       "img": "vcv",
       "price": "cbc"
+    },
+    {
+      "id": "61cb",
+      "title": "cbv",
+      "img": "c v",
+      "price": "ngvn"
     }
   ]
 }

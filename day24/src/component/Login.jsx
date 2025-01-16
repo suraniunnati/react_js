@@ -1,8 +1,9 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { error, loding, success } from '../redux/actionType'
+
 import { useNavigate } from 'react-router-dom'
+import { error, loding, success } from '../redux/loginReducer/actionType'
 
 function Login() {
     let [state, setState] = useState({
@@ -14,7 +15,7 @@ function Login() {
         setState({ ...state, [name]: value })
     }
 
-    const data = useSelector((store) => store)
+    const data = useSelector((store) => store.reducer)
     console.log(data)
     const dispatch = useDispatch()
     const navigate = useNavigate()
@@ -41,17 +42,8 @@ function Login() {
             password: ""
         })
     }
-
-    const handleblur=(e)=>{
-        let {name}=e.target 
-
-        
-
-    }
-
-    const handlefocus=(e)=>{
-
-    }
+    const handleblur=()=>{}
+    const handlefocus=()=>{}
 
     return (
         <div>
