@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 
 import { useNavigate } from 'react-router-dom'
 import { error, loding, success } from '../redux/loginReducer/actionType'
+import { LoginData } from '../redux/loginReducer/action'
 
 function Login() {
     let [state, setState] = useState({
@@ -23,19 +24,7 @@ function Login() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        dispatch({ type: loding })
-        axios.get(`http://localhost:3000/user?email=${state.email}`)
-            .then((res) => {
-                console.log(res.data)
-
-                dispatch({ type: success, payload: res.data[0].username })
-                navigate(to = "/home")
-
-            })
-            .catch((err) => {
-                console.log(err)
-                dispatch({ type: error })
-            })
+        LoginData(dispatch,navigate,state.email,state.password)
 
         setState({
             email: "",
