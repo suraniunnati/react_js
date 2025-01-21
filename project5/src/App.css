@@ -1,0 +1,16 @@
+#root {
+  margin: 0 auto;
+  background-image: url("https://wallpapers.com/images/featured/white-plain-background-cxs6kmx3wgbnzz0x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#load{
+  height: 720px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5eff1;
+}
