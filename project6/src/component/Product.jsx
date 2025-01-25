@@ -59,6 +59,7 @@ function Product() {
          img:"",
          price:""
       })
+      setEdit(null)
 
    }  
    
@@ -90,18 +91,18 @@ function Product() {
             <h3>Product Form</h3>
             <input type="text" placeholder='Name' name='name' onChange={handle} value={state.name}/>
             <input type="text" placeholder='URL' name='img' onChange={handle} value={state.img}/>
-            <input type="text" placeholder='Price' name='price' onChange={handle} value={state.price}/>
-            {edit==null?<button>submit</button>:<button>edit</button>}
+            <input type="text" placeholder='Price' name='price' onChange={handle} value={state.price}/><br/><br/>
+            {edit==null?<button id='submit'>submit</button>:<button id='edit'>Edit</button>}
         </form>
 
         <div id='product'>
        {  arr.map((el)=>{
-              return <div>
-                  <img src={el.img} alt="" width={"100px"}/>
+              return <div id='main'>
+                  <div id='img'><img src={el.img} alt="" width={"200px"}/></div>
                   <h3>{el.name}</h3>
-                  <p>{el.price}</p>
-                  <button onClick={()=>{handleEdit(el.id)}}>Edit</button>
-                  <button onClick={()=>{handleDelete(el.id)}}>Delete</button>
+                  <p>₹{el.price}</p>
+                  <button id='edit' onClick={()=>{handleEdit(el.id)}}>Edit</button>
+                  <button id='delete' onClick={()=>{handleDelete(el.id)}}>Delete</button>
                </div>
          })}
         </div>
