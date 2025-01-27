@@ -32,12 +32,11 @@ export const deleteData=(dispatch)=>async(id)=>{
 }
 
 // edit
-export const editData=(dispatch)=>async(id,data)=>{
+export const editData=(dispatch)=>async(id,state)=>{
     console.log(id)
-    console.log(data)
     dispatch({type:EDIT,payload:id})
 
-    data.product.forEach((el)=>{
+    state.forEach((el)=>{
         if(el.id===id){
            data.product({
               title:el.title,

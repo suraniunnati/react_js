@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { addData, editData } from '../redux/action'
 import { Link, useParams } from 'react-router-dom'
@@ -7,13 +7,21 @@ import { useDispatch, useSelector } from 'react-redux'
 function ProductForm() {
     const { id } = useParams();
     const dispatch =useDispatch()
-    const data=useSelector(store=>store)
+    const data=useSelector(store=>store.product)
     console.log(data);
     const [state,setState]=useState({
         title:"",
         img:"",
         price:""
     })
+    console.log(state)
+
+    useEffect(()=>{
+        const product = data.find((item) => item.id === id);
+        if (product) {
+            setState(product); // Set the state with product data
+        }
+    },[id,data])
 
     const handle=(e)=>{
         const {name,value}=e.target 
@@ -28,6 +36,7 @@ function ProductForm() {
         dispatch(editData)(id,state)
         
     }
+
   return (
     <div>
         <form action="" onSubmit={handleSubmit}>
