@@ -1,6 +1,6 @@
-import { addDoc, collection, deleteDoc, doc, getDocs } from "firebase/firestore"
+import { addDoc, collection, deleteDoc, doc, getDocs, updateDoc } from "firebase/firestore"
 import { db } from "../firebase/fire"
-import { EDIT, LODING, SUCCESS,SUCCESSDEL } from "./actionType"
+import { LODING, SUCCESS,SUCCESSDEL } from "./actionType"
 
 const useCollaction=collection(db,"product")
 
@@ -27,23 +27,15 @@ export const deleteData=(dispatch)=>async(id)=>{
     console.log(c)
     await deleteDoc(c)
     dispatch({type:SUCCESSDEL})
-    getData()
+    getData(dispatch)
     
 }
 
 // edit
 export const editData=(dispatch)=>async(id,state)=>{
     console.log(id)
-    dispatch({type:EDIT,payload:id})
+    let d =doc(db,"product",id)
+    updateDoc(d,state)
 
-    state.forEach((el)=>{
-        if(el.id===id){
-           data.product({
-              title:el.title,
-              img:el.img,
-              price:el.price
-           })
-        }
-     })
-     getData()
+     getData(dispatch)
 }

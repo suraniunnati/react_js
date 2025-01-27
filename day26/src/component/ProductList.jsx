@@ -18,7 +18,7 @@ function ProductList() {
       dispatch(deleteData)(id)
   }
   const handleEdit=(id)=>{
-   naviget(`/products/edit/${id}`)
+   naviget(`/edit/${id}`)
     
   }  
   return (
