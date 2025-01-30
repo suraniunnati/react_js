@@ -1,6 +1,7 @@
 
 import { useState } from 'react'
 import { addData, editData } from '../redux/action'
+import '../App.css'
 
 
 function ProductForm() {

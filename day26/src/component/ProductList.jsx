@@ -24,15 +24,17 @@ function ProductList() {
   return (
     <div>
       <h2>ProductList</h2>
+      <div id='data'>
      { data.product.map((el,index)=>{
-        return  <div key={index}>
+        return  <div key={index} id='list'>
           <img src={el.img} alt="" />
           <h3>{el.title}</h3>
-          <p>{el.price}</p>
-          <button onClick={()=>handleEdit(el.id)}>Edit</button>
-          <button onClick={()=>handleDelete(el.id)}>Delete</button>
+          <p>₹{el.price}</p>
+          <button id='but' onClick={()=>handleEdit(el.id)}>Edit</button>
+          <button id='but' onClick={()=>handleDelete(el.id)}>Delete</button>
         </div>
       })}
+      </div>
     
     </div>
   )
