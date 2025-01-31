@@ -13,9 +13,9 @@ function MainRoute() {
        <Routes>
         <Route path="/login" element={<Login/>}>login</Route>
         <Route path="/signup" element={<Signup/>}>signup</Route>
-        <Route path="/home" element={<Home/>}>Home</Route>
+        <Route path="/" element={<Home/>}>Home</Route>
         <Route path="/product" element={<Product/>}>product</Route>
-        <Route path="/cart" element={<Cart/>}>product</Route>
+        <Route path="/cart" element={<Cart/>}>cart</Route>
        </Routes>
     </div>
   )

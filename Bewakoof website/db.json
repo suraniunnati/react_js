@@ -11,6 +11,7 @@
             "price":1299,
             "MRP":2899,
             "off":55,
+            "rate":4.5,
             "color":"blue",
             "brand":"Bewakoof®",
             "category":"pant"
@@ -26,6 +27,7 @@
             "price":999,
             "MRP":2199,
             "off":54,
+            "rate":3.5,
             "color":"black",
             "brand":"Bewakoof Air® ",
             "category":"pant"
@@ -41,6 +43,7 @@
             "price":799,
             "MRP":1399,
             "off":42,
+            "rate":4.2,
             "color":"white",
             "brand":"Bewakoof®",
             "category":"t-shirt"
@@ -56,6 +59,7 @@
             "price":1299,
             "MRP":3419,
             "off":58,
+            "rate":5.0,
             "color":"gray",
             "brand":"Bewakoof®",
             "category":"pant"
@@ -71,6 +75,7 @@
             "price":449,
             "MRP":1099,
             "off":59,
+            "rate":3.5,
             "color":"white",
             "brand":"Bewakoof®",
             "category":"T-shirt"
@@ -86,6 +91,7 @@
             "price":1199,
             "MRP":2699,
             "off":55,
+            "rate":4.9,
             "color":"blue",
             "brand":"Bewakoof®",
             "category":"pant"
@@ -101,6 +107,7 @@
             "price":699,
             "MRP":2199,
             "off":68,
+            "rate":2.9,
             "color":"white",
             "brand":"Bewakoof®",
             "category":"Hoodies"
@@ -116,6 +123,7 @@
             "price":1299,
             "MRP":3999,
             "off":67,
+            "rate":4.5,
             "color":"black",
             "brand":"Bewakoof®",
             "category":"Hoodies"
@@ -131,6 +139,7 @@
             "price":999,
             "MRP":2999,
             "off":66,
+            "rate":3.6,
             "color":"Pink",
             "brand":"Bewakoof Heavy Duty®",
             "category":"Hoodies"
@@ -146,6 +155,7 @@
             "price":499,
             "MRP":1599,
             "off":68,
+            "rate":4.6,
             "color":"Blue",
             "brand":"Bewakoof®",
             "category":"Shirt"

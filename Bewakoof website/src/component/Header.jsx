@@ -19,12 +19,12 @@ function Header() {
     </div>
     <div className="nav1 h-[40%] sm:flex justify-around items-center md:border-b">
         <div className='flex'>
-        <div className='logo'>
+        <Link to={"/"}><div className='logo'>
             <img src={logo} alt="" width={"50px"} className='md:hidden'/>
             <img src="https://images.bewakoof.com/web/ic-desktop-bwkf-trademark-logo.svg" alt="" width={"200px"} className='hidden md:block'/>
-        </div>
+        </div></Link>
         <div className='flex justify-evenly items-center w-[350px] text-sm'>
-            <Link>MEN</Link>
+            <Link to={"/product"}>MEN</Link>
             <Link>WOMEN</Link>
             <Link>MOBILE COVERS</Link></div>
         </div>
