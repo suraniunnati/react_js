@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fatchData } from '../redux/ProductReducer/action'
 import Aside from '../component/Aside'
+import '../App.css'
 
 function Product() {
 
@@ -16,22 +17,27 @@ function Product() {
 
     useEffect(()=>{
       dispatch(fatchData)
-      // axios.get(`http://localhost:3000/product`)
-      //     .then((res)=>{
-      //         console.log(res.data)
-      //         setState(res.data)
-            
-      //     })
     },[])
 
 
   return (
     <div>
       <div id='main' className='border flex w-full'>
-        <div className='border w-[25%]'>
+        <div className=' w-[22%]'>
           <Aside/>
         </div>
-        <div className=' w-[75%] p-5 grid grid-cols-3 gap-8'>
+        <div className=' w-[75%] p-5 relative'>
+          <div className='h-[70px]'>
+            <div className='w-[220px] border flex items-center justify-evenly p-2  absolute right-5'>
+            <span className='text-gray-400'> <i class="fa-solid fa-arrow-down-wide-short"></i> Short by : </span>
+            <select name="" id="" className='w-[100px]'>
+              <option value="">Popularity</option>
+              <option value="">Price : High to Low</option>
+              <option value="">Price : Low to High</option>
+            </select>
+            </div>
+          </div>
+          <div className='h-[900px] overflow-auto grid grid-cols-3 gap-8'>
           {
             data.product.map((el)=>{
              return <div>
@@ -53,6 +59,7 @@ function Product() {
              </div>
             })
           }
+          </div>
         </div>
       </div>
     </div>

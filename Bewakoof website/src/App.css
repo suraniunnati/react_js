@@ -1,0 +1,6 @@
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  li::marker {
+    color: rgb(179, 178, 178);
+  } 
