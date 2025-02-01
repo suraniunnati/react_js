@@ -5,11 +5,9 @@ import { useDispatch, useSelector } from 'react-redux'
 import { fatchData } from '../redux/ProductReducer/action'
 import Aside from '../component/Aside'
 import '../App.css'
+import { Link } from 'react-router-dom'
 
 function Product() {
-
-  const [state,setState]=useState()
-  console.log(state)
 
     const data=useSelector(store=>store)
     console.log(data)
@@ -42,7 +40,7 @@ function Product() {
             data.product.map((el)=>{
              return <div>
               <div className='relative shadow'>
-                <img src={el.img1} alt="" width={"100%"}/>
+                <Link to={`/signleProduct/${el.id}`}><img src={el.img1} alt="" width={"100%"}/></Link>
                 <h1 className='absolute bottom-1 left-1 bg-white rounded-xl w-[50px] h-[25px] text-center flex items-center justify-center shadow'><i className="fa-solid fa-star text-[10px] text-yellow-400"></i><span className='text-[12px] font-semibold ms-1'>{el.rate}</span></h1>
               </div>
               <div className='relative mt-2'>

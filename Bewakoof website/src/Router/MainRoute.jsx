@@ -5,6 +5,7 @@ import Login from '../pages/Login'
 import Signup from '../pages/Signup'
 import Product from '../pages/Product'
 import Cart from '../pages/Cart'
+import SingleProduct from '../pages/SingleProduct'
 
 
 function MainRoute() {
@@ -15,6 +16,7 @@ function MainRoute() {
         <Route path="/signup" element={<Signup/>}>signup</Route>
         <Route path="/" element={<Home/>}>Home</Route>
         <Route path="/product" element={<Product/>}>product</Route>
+        <Route path="/signleProduct/:id" element={<SingleProduct/>}>product</Route>
         <Route path="/cart" element={<Cart/>}>cart</Route>
        </Routes>
     </div>
