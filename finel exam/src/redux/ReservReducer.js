@@ -13,7 +13,7 @@ export const ReservReducer=(state=productData,action)=>{
         case loding :
             return {...state , isloding:true}
         case success :
-            return {...state , isloding:false , issuccess:true , dataform : payload}
+            return {...state , isloding:false , issuccess:true , dataform : action.payload}
         case error :
             return {...state , isloding:false , iserror:true}
         default : return state            

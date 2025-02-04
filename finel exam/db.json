@@ -1,4 +1,8 @@
 {
+  "rooms": [
+    { "id": 1, "name": "Deluxe Room", "price": 100 },
+    { "id": 2, "name": "Suite Room", "price": 200 }
+],
   "data": [
     {
       "id": "f548",
