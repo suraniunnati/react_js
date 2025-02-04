@@ -1,8 +1,13 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { addData } from '../redux/action'
 
 function ReservationForm() {
+    const Data = useSelector(store => store)
+    console.log(Data);
 
+    const dispatch = useDispatch()
 
 
     let [state,setState]=useState({
@@ -21,8 +26,7 @@ function ReservationForm() {
     }
     const handleSubmit=(e)=>{
         e.preventDefault()
-        axios.post(`http://localhost:3000/data`, state)
-        console.log(state)
+        dispatch(addData)(state)
 
     }
   return (
