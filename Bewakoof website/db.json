@@ -169,6 +169,57 @@
             "brand":"Bewakoof®",
             "category":"Shirt",
             "type":"men"
+        },
+        {
+            "id":11,
+            "title":"Women's Red Inner Peace Graphic Printed Boyfriend T-shirt",
+            "img1":"https://images.bewakoof.com/t1080/women-s-red-inner-peace-graphic-printed-boyfriend-t-shirt-295706-1739771176-1.jpg",
+            "img2":"https://images.bewakoof.com/original/inner-peace-boyfriend-t-shirt-bold-red-295706-1656108914-2.jpg",
+            "img3":"https://images.bewakoof.com/t96/inner-peace-boyfriend-t-shirt-bold-red-295706-1656108919-3.jpg",
+            "img4":"https://images.bewakoof.com/t96/inner-peace-boyfriend-t-shirt-bold-red-295706-1656108924-4.jpg",
+            "img5":"https://images.bewakoof.com/t1080/women-s-red-inner-peace-graphic-printed-boyfriend-t-shirt-295706-1739771176-1.jpg",
+            "price":399,
+            "MRP":999,
+            "off":60,
+            "rate":4.5,
+            "color":"red",
+            "brand":"Bewakoof®",
+            "category":"T-shirt",
+            "type":"women"
+        },
+        {
+            "id":12,
+            "title":"Women's Barely pink Graphic Printed Oversized ",
+            "img1":"https://images.bewakoof.com/t1080/women-s-barely-pink-graphic-printed-oversized-hoodies-641004-1732959708-1.jpg",
+            "img2":"https://images.bewakoof.com/original/women-s-barely-pink-graphic-printed-oversized-hoodies-641004-1731935142-2.jpg",
+            "img3":"https://images.bewakoof.com/t96/women-s-barely-pink-graphic-printed-oversized-hoodies-641004-1731935146-3.jpg",
+            "img4":"https://images.bewakoof.com/t96/women-s-barely-pink-graphic-printed-oversized-hoodies-641004-1731935150-4.jpg",
+            "img5":"https://images.bewakoof.com/t96/women-s-barely-pink-graphic-printed-oversized-hoodies-641004-1731935155-5.jpg",
+            "price":799,
+            "MRP":2999,
+            "off":73,
+            "rate":4.5,
+            "color":"pink",
+            "brand":"bewakoof x disney",
+            "category":"Hoodies",
+            "type":"women"
+        },
+        {
+            "id":13,
+            "title":"Women's Beige Oversized Plus Size Hoodies ",
+            "img1":"https://images.bewakoof.com/t1080/women-s-beige-oversized-plus-size-hoodies-641024-1732097788-1.jpg",
+            "img2":"https://images.bewakoof.com/original/women-s-beige-oversized-plus-size-hoodies-641024-1732097792-2.jpg",
+            "img3":"https://images.bewakoof.com/t96/women-s-beige-oversized-plus-size-hoodies-641024-1732097797-3.jpg",
+            "img4":"https://images.bewakoof.com/t96/women-s-beige-oversized-plus-size-hoodies-641024-1732097801-4.jpg",
+            "img5":"https://images.bewakoof.com/t96/women-s-beige-oversized-plus-size-hoodies-641024-1732097805-5.jpg",
+            "price":799,
+            "MRP":3149,
+            "off":74,
+            "rate":4.5,
+            "color":"white",
+            "brand":"Bewakoof®",
+            "category":"Hoodies",
+            "type":"women"
         }
     ]
 }

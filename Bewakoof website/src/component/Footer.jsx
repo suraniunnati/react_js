@@ -5,7 +5,7 @@ function Footer() {
     <div className='bg-black text-white text-sm p-2'>
     <img src="https://images.bewakoof.com/web/ic-desktop-bwkf-tribe-trademark-logo.svg" alt="" width={"200px"} className='p-3'/>
    
-    <div className='grid grid-cols-4 gap-10 '>
+    <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-10 '>
         <div className=' p-4'>
             <h3 className='text-[#FFD232] font-bold mt-2 text-[16px]'>CUSTOMER SERVICE</h3>
             <p className='mt-3'>Contact Us</p>
