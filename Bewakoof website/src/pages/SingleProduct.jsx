@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import { singleData } from '../redux/ProductReducer/action'
+import { addToCart, singleData } from '../redux/ProductReducer/action'
 import { useDispatch, useSelector } from 'react-redux'
 import { useEffect } from 'react';
 import info from '../assets/info.png'
@@ -10,9 +10,15 @@ function SingleProduct() {
   const dispatch = useDispatch()
   const data = useSelector(store => store.singleProduct)
 
+  console.log(id)
+
   useEffect(() => {
     singleData(dispatch, id);
   }, [dispatch, id]);
+
+  const cartProduct = () => {
+    addToCart(dispatch, data);
+};
 
   function changeimg(thumbnail) {
     document.getElementById("mainImage").src = thumbnail.src;
@@ -82,7 +88,7 @@ function SingleProduct() {
             <i class="fa-regular fa-bell"></i>
           </div>
           <div className='mt-3'>
-            <button className='bg-[#FFD232] text-center p-3 rounded-lg w-[60%]'><i class="fa-solid fa-weight-hanging"></i> ADD TO BAG</button>
+            <button className='bg-[#FFD232] text-center p-3 rounded-lg w-[60%]' onClick={cartProduct}><i class="fa-solid fa-weight-hanging"></i> ADD TO BAG</button>
             <button className='p-3 w-[38%] ms-2 border rounded-lg'><i class="fa-regular fa-heart"></i> WISHLIST</button>
           </div>
           <p className='text-lg p-2 font-normal mt-2'><i class="fa-solid fa-location-dot"></i> Check for Delivery Details</p>
